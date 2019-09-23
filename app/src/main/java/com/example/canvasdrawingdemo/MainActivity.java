@@ -28,9 +28,19 @@ public class MainActivity extends AppCompatActivity {
 
         //draw somestuff on the canvas
         //set the background color
-        canvas.drawColor(Color.YELLOW);
+        canvas.drawColor(Color.BLACK);
 
-        //
+        //CHOOSE A GREEN COLOR
+
+        paintbrush.setColor(Color.GREEN);
+
+        // draw a line
+        canvas.drawLine(10,50,200,50,paintbrush);
+        //2ND LINE
+        paintbrush.setColor(Color.RED);
+        canvas.drawLine(10,50,200,50,paintbrush);
+
+        //canvas .drawRect()
 
         imageView.setImageBitmap(b);
     }
